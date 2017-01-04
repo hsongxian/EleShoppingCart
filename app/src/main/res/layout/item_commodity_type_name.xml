@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/type_menu_width"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/item_menu_view_select"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="好评榜哈哈哈哈啊哈啊哈哈"
+            android:textColor="@color/grey_700"
+            android:textSize="@dimen/card_context_size_12sp"/>
+
+        <com.song.eleshoppingcart.view.PromptTextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/card_context_size_10sp"
+            android:text=""
+            android:visibility="gone"
+            style="@style/promptText"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider"/>
+</LinearLayout>
